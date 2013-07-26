@@ -1,0 +1,19 @@
+
+.block {
+	background-color: blue;
+}
+
+$blk-color: blue;
+$i: 1;
+
+@while $i <= 5 {
+	.block:nth-child(#{$i}) {
+		width: 10px * $i;
+		height: 10px * $i;
+		$blk-color: transparentize($blk-color, .15);
+		background-color: $blk-color;
+		margin: 2px * $i;
+	}
+
+	$i: $i + 1;
+}

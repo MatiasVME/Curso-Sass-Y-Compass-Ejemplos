@@ -1,0 +1,9 @@
+
+@for $i from 1 through 9 {
+	#circle-#{i} {
+		width: 50px;
+		height: 50px;
+		background-color: red;
+		margin: 1px;
+	}
+}

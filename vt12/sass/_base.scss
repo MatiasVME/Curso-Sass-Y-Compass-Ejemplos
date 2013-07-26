@@ -1,0 +1,17 @@
+@mixin circle ($color: darkgrey, 
+		$border-size: 10px, 
+		$border-color: grey, 
+		$size: 90px) {
+
+	border-radius: 50%;
+	background-color: $color;
+	border: $border-size solid $border-color;
+	width: $size;
+	height: $size;
+}
+
+@mixin media-small {
+	@media only screen and (max-width: 450px) {
+		@content;
+	}
+}

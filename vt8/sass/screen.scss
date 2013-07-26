@@ -1,0 +1,28 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/css3";
+
+/**
+ *  Mixins
+ */
+
+@mixin circle ($y, $x, $size:100px, $color:blue) {
+	width: $size;
+	height: $size;
+	background-color: $color;
+	border-radius: 50%;
+	position: absolute;
+	top: $y - ($size / 2);
+	left: $x - ($size / 2);
+}
+
+/**
+ *  Styles
+ */
+
+li {
+	@include inline-block;
+}

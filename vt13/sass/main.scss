@@ -1,0 +1,20 @@
+
+@import "base";
+
+#main-container > input { margin: 20px; }
+
+#button-1 {
+	@include my-button ("elegant-grey");
+}
+
+#button-2 {
+	@include my-button ("modern-blue");
+}
+
+#button-3 {
+	@include my-button ("taxy");
+}
+
+#button-4 {
+	@include my-button ("normal-blue");
+}

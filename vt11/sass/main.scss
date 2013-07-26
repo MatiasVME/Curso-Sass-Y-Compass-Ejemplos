@@ -1,0 +1,50 @@
+
+@import "shapes";
+@import "base";
+
+body {
+	@media #{$media-medium} {
+		background-color: darkgrey;
+	}
+
+	@media #{$media-small} {
+		background-color: steelblue;
+	}
+}
+
+.shape {
+	margin: 20px;
+
+	@media #{$media-small} {
+		border: 1px solid blue;
+	}
+}
+
+#triangle-up {
+	@include triangle-up;
+
+	@import "color";
+
+	background-color: $mi-color;
+}
+
+#triangle-down {
+	@include triangle-down;
+}
+
+#triangle-left {
+	@include triangle-left;
+}
+
+#triangle-right {
+	@include triangle-right;
+}
+
+#star-five {
+	@include star-five;
+}
+
+#talk-bubble {
+	@include talk-bubble;
+}
+

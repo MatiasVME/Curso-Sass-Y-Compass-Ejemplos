@@ -1,0 +1,33 @@
+@media only screen and (max-width: 650px) {
+  /* line 5, ../sass/main.scss */
+  body {
+    background-color: blue;
+  }
+}
+/* line 16, ../sass/main.scss */
+.icon {
+  width: 80px;
+  height: 80px;
+}
+
+/* line 21, ../sass/main.scss */
+#icon-facebook {
+  background: url("../img/social/facebook.png");
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-color: yellow;
+}
+
+/* line 26, ../sass/main.scss */
+#icon-twitter {
+  background: url("../img/social/twitter.png");
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+
+/* line 30, ../sass/main.scss */
+#icon-github {
+  background: url("../img/social/github.png");
+  -webkit-background-size: contain;
+  background-size: contain;
+}

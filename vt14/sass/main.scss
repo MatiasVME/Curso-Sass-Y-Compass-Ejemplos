@@ -1,0 +1,42 @@
+@import "compass/css3";
+
+$max: 9;
+$alpha: 0;
+$circle-color: hsl(241, 57%, 45%);
+$circle-size: 15px;
+
+%circle-xD {
+	@include inline-block;
+	margin: 5px;
+	border-radius: 50%;
+
+    &:hover {
+	   	background-color: invert($circle-color);
+   		@include scale(1.1);
+	    @include transition(all 0.2s ease);
+	}
+}
+
+@for $i from 1 through $max {
+	#circle-#{$i} {
+		@extend %circle-xD;
+		
+		$alpha: $alpha + 0.1;
+		background-color: transparentize($circle-color, $alpha);
+
+	    @if $i == round($max/2) {
+	    	$circle-size: $circle-size + 20px;
+	    }
+
+	    @else if $i > $max/2 {
+	    	$circle-size: $circle-size - 20px;
+	    }
+
+	    @else {
+	    	$circle-size: $circle-size + 20px;
+	    }
+
+	    width: $circle-size;
+	    height: $circle-size;
+	}
+}

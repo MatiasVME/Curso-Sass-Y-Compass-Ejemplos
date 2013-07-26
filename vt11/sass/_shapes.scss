@@ -1,0 +1,133 @@
+
+/**
+ *  Todas las figuras las puedes encontrar en la url:
+ *  http://css-tricks.com/examples/ShapesOfCSS/ 
+ */
+
+@import "compass/css3";
+
+/**
+ *  Extends
+ */
+
+// Triangles
+
+%triangle-vertical {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+}
+
+%triangle-horizontal {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+}
+
+// Star (5 points)
+
+%star-five {
+	margin: 50px 0;
+	position: relative;
+	display: block;
+	color: red;
+	width: 0px;
+	height: 0px;
+	border-right:  100px solid transparent;
+	border-bottom: 70px  solid red;
+	border-left:   100px solid transparent;
+	@include rotate(35deg);
+
+    &:before {
+    	border-bottom: 80px solid red;
+   		border-left: 30px solid transparent;
+		border-right: 30px solid transparent;
+		position: absolute;
+		height: 0;
+		width: 0;
+		top: -45px;
+		left: -65px;
+		display: block;
+		content: '';
+   		@include rotate(-35deg);
+    }
+
+    &:after {
+		position: absolute;
+		display: block;
+		color: red;
+		top: 3px;
+		left: -105px;
+		width: 0px;
+		height: 0px;
+		border-right: 100px solid transparent;
+		border-bottom: 70px solid red;
+		border-left: 100px solid transparent;
+		@include rotate(-70deg);
+		content: '';
+	}
+}
+
+%talk-bubble {
+	width: 120px;
+	height: 80px;
+	background: red;
+	position: relative;
+	@include border-radius(10px);
+
+	&:before {
+		content:"";
+		position: absolute;
+		right: 100%;
+		top: 26px;
+		width: 0;
+		height: 0;
+		border-top: 13px solid transparent;
+		border-right: 26px solid red;
+		border-bottom: 13px solid transparent;
+	}
+}
+
+/**
+ *  Mixins
+ */
+
+// Triangles 
+
+@mixin triangle-up {
+	@extend %triangle-vertical;
+
+	border-bottom: 100px solid red;
+}
+
+@mixin triangle-down {
+	@extend %triangle-vertical;
+	
+	border-top: 100px solid red;
+}
+
+@mixin triangle-left {
+	@extend %triangle-horizontal;
+
+	border-right: 100px solid red;
+}
+
+@mixin triangle-right {
+	@extend %triangle-horizontal;
+	
+	border-left: 100px solid red;
+}
+
+// Star (5 points)
+
+@mixin star-five {
+	@extend %star-five;
+}
+
+// Talk Bubble
+
+@mixin talk-bubble {
+	@extend %talk-bubble;
+}

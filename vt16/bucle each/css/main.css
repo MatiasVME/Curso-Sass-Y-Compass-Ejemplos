@@ -1,0 +1,31 @@
+/* line 2, ../sass/main.scss */
+#social-facebook, #social-twitter, #social-youtube, #social-github {
+  width: 64px;
+  height: 64px;
+  display: block;
+}
+
+/* line 8, ../sass/main.scss */
+ul {
+  list-style: none;
+}
+
+/* line 20, ../sass/main.scss */
+#social-facebook {
+  background-image: url("../img/social/facebook.png");
+}
+
+/* line 20, ../sass/main.scss */
+#social-twitter {
+  background-image: url("../img/social/twitter.png");
+}
+
+/* line 20, ../sass/main.scss */
+#social-youtube {
+  background-image: url("../img/social/youtube.png");
+}
+
+/* line 20, ../sass/main.scss */
+#social-github {
+  background-image: url("../img/social/github.png");
+}

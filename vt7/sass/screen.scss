@@ -1,0 +1,48 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+$numero: 20px;
+$margin: 40px $numero;
+
+$navy-blue: green + red;
+$turquesa: rgb(1, 150, 155);
+$calyso: rgb(0, 155, 132);
+$green: rgb(0, 155, 86);
+$emeralds: rgb(0,155, 17) + $navy-blue;
+
+$letras: Helvetica, Arial, sans-serif;
+
+.block {
+	width: 120px;
+	height: 120px;
+	background-color: steelblue;
+	margin: $margin;
+	font-family: $letras;
+	font-size: 2em;
+
+	/*&:hover {
+		-webkit-transform: scale($numero);
+	}*/
+
+	&:nth-child(1) {
+		background-color: $navy-blue;
+	}
+
+	&:nth-child(2) {
+		background-color: $turquesa;
+	}
+
+	&:nth-child(3) {
+		background-color: $calyso;
+	}
+
+	&:nth-child(4) {
+		background-color: $green;
+	}
+
+	&:nth-child(5) {
+		background-color: $emeralds;
+	}
+}

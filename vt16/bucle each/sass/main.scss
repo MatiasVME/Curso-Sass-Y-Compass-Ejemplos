@@ -1,0 +1,25 @@
+
+%icon {
+	width: 64px;
+	height: 64px;
+	display: block;
+}
+
+ul {
+	list-style: none;
+}
+
+$social-list:(
+	facebook, 
+	twitter, 
+	youtube, 
+	github
+);
+
+@each $social in $social-list {
+  #social-#{$social} {
+  	@extend %icon;
+
+    background-image: url('../img/social/#{$social}.png');
+  }
+}

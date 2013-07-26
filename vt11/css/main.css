@@ -1,0 +1,150 @@
+/**
+ *  Todas las figuras las puedes encontrar en la url:
+ *  http://css-tricks.com/examples/ShapesOfCSS/ 
+ */
+/**
+ *  Extends
+ */
+/* line 15, ../sass/_shapes.scss */
+#triangle-up, #triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+/* line 22, ../sass/_shapes.scss */
+#triangle-left, #triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+}
+
+/* line 31, ../sass/_shapes.scss */
+#star-five {
+  margin: 50px 0;
+  position: relative;
+  display: block;
+  color: red;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px  solid red;
+  border-left: 100px solid transparent;
+  -webkit-transform: rotate(35deg);
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -o-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+/* line 43, ../sass/_shapes.scss */
+#star-five:before {
+  border-bottom: 80px solid red;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -45px;
+  left: -65px;
+  display: block;
+  content: '';
+  -webkit-transform: rotate(-35deg);
+  -moz-transform: rotate(-35deg);
+  -ms-transform: rotate(-35deg);
+  -o-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}
+/* line 57, ../sass/_shapes.scss */
+#star-five:after {
+  position: absolute;
+  display: block;
+  color: red;
+  top: 3px;
+  left: -105px;
+  width: 0px;
+  height: 0px;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid red;
+  border-left: 100px solid transparent;
+  -webkit-transform: rotate(-70deg);
+  -moz-transform: rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+  -o-transform: rotate(-70deg);
+  transform: rotate(-70deg);
+  content: '';
+}
+
+/* line 73, ../sass/_shapes.scss */
+#talk-bubble {
+  width: 120px;
+  height: 80px;
+  background: red;
+  position: relative;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 80, ../sass/_shapes.scss */
+#talk-bubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid red;
+  border-bottom: 13px solid transparent;
+}
+
+/**
+ *  Mixins
+ */
+@media only screen and (max-width: 700px) {
+  /* line 5, ../sass/main.scss */
+  body {
+    background-color: darkgrey;
+  }
+}
+@media only screen and (max-width: 450px) {
+  /* line 5, ../sass/main.scss */
+  body {
+    background-color: steelblue;
+  }
+}
+
+/* line 15, ../sass/main.scss */
+.shape {
+  margin: 20px;
+}
+@media only screen and (max-width: 450px) {
+  /* line 15, ../sass/main.scss */
+  .shape {
+    border: 1px solid blue;
+  }
+}
+
+/* line 23, ../sass/main.scss */
+#triangle-up {
+  border-bottom: 100px solid red;
+  background-color: steelblue;
+}
+
+/* line 31, ../sass/main.scss */
+#triangle-down {
+  border-top: 100px solid red;
+}
+
+/* line 35, ../sass/main.scss */
+#triangle-left {
+  border-right: 100px solid red;
+}
+
+/* line 39, ../sass/main.scss */
+#triangle-right {
+  border-left: 100px solid red;
+}

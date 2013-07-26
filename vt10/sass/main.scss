@@ -1,0 +1,32 @@
+
+$break-small: "only screen and (max-width : 650px)";
+
+@media #{$break-small} {
+	body {
+		background-color: blue;
+	}
+}
+
+@mixin social-icon ($img) {
+	background: url("../img/social/#{$img}.png");
+	-webkit-background-size: contain; // safari 3 - 4
+	background-size: contain;
+}
+
+.icon {
+	width: 80px;
+	height: 80px;
+}
+
+#icon-facebook {
+	@include social-icon("facebook");
+	background-color: invert(blue);
+}
+
+#icon-twitter {
+	@include social-icon("twitter");
+}
+
+#icon-github {
+	@include social-icon("github");
+}
