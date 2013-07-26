@@ -2,3 +2,6 @@
 # LINUX
 *~ 				# Archivos Teporales
 .directory 		# Archivo que genera el gestor de archivos Dolphin
+
+# Cache de Sass
+.sass-cache
