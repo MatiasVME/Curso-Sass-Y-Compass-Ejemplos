@@ -1,0 +1,16 @@
+
+$color: blue;
+$color-oscurecido: darken($color, 20%);
+
+.block {
+	width: 100px;
+	height: 100px;
+
+	&:nth-child(1) {
+		background-color: $color;
+	}
+
+	&:nth-child(2) {
+		background-color: $color-oscurecido;
+	}
+}

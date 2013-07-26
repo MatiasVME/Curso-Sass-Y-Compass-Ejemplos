@@ -1,0 +1,14 @@
+/* line 9, ../sass/main.scss */
+.block {
+  width: 100px;
+  height: 100px;
+}
+/* line 13, ../sass/main.scss */
+.block:nth-child(1) {
+  background-color: blue;
+}
+/* line 17, ../sass/main.scss */
+.block:nth-child(2) {
+  width: 200px;
+  background-color: yellow;
+}

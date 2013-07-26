@@ -1,0 +1,17 @@
+
+@function -acme-sumatoria ($nums...) {
+    $max-args: length($nums);
+    $sumatoria: 0px;
+
+    @for $i from 1 through $max-args {
+        $sumatoria: nth($nums, $i) + $sumatoria;
+    }
+
+    @return $sumatoria;
+}
+
+.block {
+    width: -acme-sumatoria(100px, 50px, 80px);
+    height: 100px;
+    background-color: blue;
+}

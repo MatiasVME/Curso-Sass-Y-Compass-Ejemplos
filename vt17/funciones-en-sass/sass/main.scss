@@ -1,0 +1,21 @@
+
+@function suma ($n1, $n2) {
+	@return $n1 + $n2;
+}
+
+$color: blue;
+$color-oscurecido: invert($color);
+
+.block {
+	width: 100px;
+	height: 100px;
+
+	&:nth-child(1) {
+		background-color: $color;
+	}
+
+	&:nth-child(2) {
+		width: suma(100px, 100px);
+		background-color: $color-oscurecido;
+	}
+}

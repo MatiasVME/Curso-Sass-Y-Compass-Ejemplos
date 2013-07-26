@@ -1,0 +1,8 @@
+
+@function -acme-triad ($base-color) {
+  $colors: $base-color;
+  $colors: append($colors, adjust-hue($base-color, 120), comma);
+  $colors: append($colors, adjust-hue($base-color, -120), comma);
+
+  @return $colors; 
+}

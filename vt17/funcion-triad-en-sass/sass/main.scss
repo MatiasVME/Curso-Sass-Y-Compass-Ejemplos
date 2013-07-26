@@ -1,0 +1,22 @@
+
+@import "utility";
+
+$bcolor: red;
+$ctriad: -acme-triad($bcolor);
+
+.block {
+  width: 100px;
+  height: 100px;
+  
+  &:nth-child(1) {
+    background-color: nth($ctriad, 1);
+  }
+  
+  &:nth-child(2) {
+    background-color: nth($ctriad, 2);
+  }
+
+  &:nth-child(3) {
+    background-color: nth($ctriad, 3);
+  }
+}
