@@ -7,3 +7,6 @@
 
 # Cache de Sass
 .sass-cache
+
+# Otros
+/future
