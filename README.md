@@ -12,7 +12,7 @@ http://rubyinstaller.org/
 Luego de debe entrar a la terminal de Ruby y escribir lo siguiente:
 
 ```
-gem install compass
+sudo gem install compass
 ```
 
 Para compilar los ficheros Sass debe posicionarse por medio de la terminal en la raiz del proyecto
