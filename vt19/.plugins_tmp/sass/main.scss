@@ -1,9 +1,0 @@
-@import "susy";
-@import "omgtext";
-@import "sassy-buttons";
-
-.page { @include container; }
-
-button {
-	@include sassy-button("matte", 15px, 26px, #ffd71a, #ffaa1a);
-}
