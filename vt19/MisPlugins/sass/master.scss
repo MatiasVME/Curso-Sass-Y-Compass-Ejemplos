@@ -1,0 +1,15 @@
+
+@import "sassy-buttons";
+@import "susy";
+
+.btn1 {
+	@include sassy-button;
+}
+
+.btn2 {
+	@include sassy-button-gradient("glass", #8cbe5f);
+}
+
+.btn3 {
+	@include sassy-button("shiny", 15px, 26px, #ffd71a, #ffaa1a);
+}
