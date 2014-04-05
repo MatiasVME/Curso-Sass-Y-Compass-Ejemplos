@@ -1,0 +1,16 @@
+
+@import "compass/utilities/sprites";
+@import "social/*.png";
+
+.sprite {
+	width: 64px;
+	height: 64px;
+}
+
+.social-facebook {
+	@include social-sprite(facebook);
+}
+
+.social-twitter {
+	@include social-sprite(twitter);
+}

@@ -1,0 +1,30 @@
+/* line 66, social/*.png */
+.social-sprite, .social-facebook, .social-github, .social-twitter, .social-youtube {
+  background: url('../img/social-sc843a1e468.png') no-repeat;
+}
+
+/* line 60, ../../../../../../../usr/lib64/ruby/gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-facebook {
+  background-position: 0 0;
+}
+
+/* line 60, ../../../../../../../usr/lib64/ruby/gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-github {
+  background-position: 0 -64px;
+}
+
+/* line 60, ../../../../../../../usr/lib64/ruby/gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-twitter {
+  background-position: 0 -128px;
+}
+
+/* line 60, ../../../../../../../usr/lib64/ruby/gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-youtube {
+  background-position: 0 -192px;
+}
+
+/* line 7, ../sass/master.scss */
+.sprite {
+  width: 64px;
+  height: 64px;
+}
